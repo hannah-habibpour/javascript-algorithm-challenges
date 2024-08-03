@@ -13,7 +13,7 @@ const nameSet = new Set();
 We can also pass an array to the `Set()` constructor. The values in the array will be added to the set. We can create a set with some values like this:
 
 ```js
-const nameSet = new Set(['John', 'Jane', 'Joe']);
+const nameSet = new Set(["John", "Jane", "Joe"]);
 ```
 
 Let's log the set:
@@ -25,7 +25,7 @@ console.log(nameSet); // Set { 'John', 'Jane', 'Joe' }
 We can see that the set has three values. Let's create a set with some duplicate values:
 
 ```js
-const nameSet = new Set(['John', 'Jane', 'Joe', 'Jane', 'Joe']);
+const nameSet = new Set(["John", "Jane", "Joe", "Jane", "Joe"]);
 ```
 
 Let's log the set:
@@ -41,8 +41,8 @@ We can see that even though we added duplicate values to the set, the set does n
 To add data to a set, we use the `add()` method. Let's add some values to the `nameSet` set:
 
 ```js
-nameSet.add('Jack');
-nameSet.add('Jill');
+nameSet.add("Jack");
+nameSet.add("Jill");
 ```
 
 Let's log the set:
@@ -56,7 +56,7 @@ console.log(nameSet); // Set { 'John', 'Jane', 'Joe', 'Jack', 'Jill' }
 To check for a value in a set, we use the `has()` method. Let's check if the set contains the value `'Jack'`:
 
 ```js
-console.log(nameSet.has('Jack')); // true
+console.log(nameSet.has("Jack")); // true
 ```
 
 ## Deleting Data
@@ -64,7 +64,7 @@ console.log(nameSet.has('Jack')); // true
 To delete data from a set, we use the `delete()` method. Let's delete the value `'Jack'` from the set:
 
 ```js
-nameSet.delete('Jack');
+nameSet.delete("Jack");
 ```
 
 Let's log the set:
